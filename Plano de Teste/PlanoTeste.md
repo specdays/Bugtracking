@@ -1,69 +1,192 @@
-# Plano de Teste
+# 📋 Plano de Teste - Swag Labs
+
 ![SwagLabs](image.png)
 
-## Planilha Plano de Teste
-- Feito por Google Planilhas.
+Este documento apresenta o **Plano de Teste utilizado nas práticas de Bug Tracking**, realizadas durante o curso da plataforma **Qualiters Club**.
 
-### Introdução do plano
-![intro](image-1.png)
+O objetivo deste plano é definir a **estratégia de testes**, escopo, critérios de aceite e organização da suíte de testes aplicada à aplicação **Swag Labs**.
 
-![intro 2](image-2.png)
+---
 
-![intro 3](image-3.png)
+# 📊 Ferramenta utilizada
 
-## Escopo
+O plano de teste foi desenvolvido utilizando **Google Planilhas**, permitindo organizar de forma estruturada:
 
-Na aba Escopo da planilha irá conter todos os levantamentos de requisitos, critério de aceite, os tipos de testes que serão realizados, assim como a prioridade e severidade deles. Além da meta e progresso de cada um.
+- Casos de teste
+- Critérios de aceite
+- Prioridade e severidade
+- Resultados obtidos
+- Registro de defeitos
+- Indicadores de status
 
-![escopo](image-5.png)
+---
 
-## Apresentação da suite
+# 📖 Introdução do Plano
 
-ID: Cada id representa um caso de teste (CT) e respectivamente o número deste caso de teste.
+A introdução do plano de testes apresenta o contexto geral do projeto, incluindo objetivos, escopo inicial e organização da execução dos testes.
 
-Critérios de Aceite: São as condições escritas em Gherking que o teste deve cumprir para passar.
+![Introdução](image-2.png)
 
-Prioridade: A prioridade determina a ordem de correção de um defeito.
+![Introdução](image-3.png)
 
-Severidade: Indica o impacto de um defeito no funcionamento do sistema. É uma medida que avalia a gravidade do problema e como ele afeta o desempenho ou usabilidade do software.
+---
 
-Resultado Esperado: É o que deveria acontecer quando o teste é executado corretamente.
+# 📌 Escopo dos Testes
 
-Resultado Obtido: Onde o "OK" são para testes que passaram e "NOK" para testes que foi registrado algum bug.
+Na aba **Escopo** da planilha são apresentados:
 
-Registro de Defeito: É uma forma de documentar defeitos e bugs com evidências. Cada bug tera um ID comecando pelo 001, e sera documentado na planilha de Controle de Bugs.
+- Levantamento de requisitos
+- Critérios de aceite
+- Tipos de testes executados
+- Classificação de prioridade
+- Classificação de severidade
+- Meta de execução dos testes
+- Progresso da execução
 
-Indicador de Status: É uma representação visual do resultado do teste.
+![Escopo](image-5.png)
 
-### Suite - Login
+---
 
-Na aba suite_login tem como objetivo validar a funcionalidade login, como o critério de aceite. Contém o caso de teste funcional que valida a função anterior.
+# 🧪 Estrutura da Suíte de Testes
 
-![login](image-6.png)
+A planilha contém diferentes abas organizadas por **funcionalidade do sistema**, permitindo melhor controle e rastreabilidade dos testes.
 
-### Suite - Menu
+Cada linha representa um **Caso de Teste (CT)**.
 
-Na aba Suite validar_menu tem como objetivo validar a funcionalidade do menu do site, como o critério de aceite. Contém o caso de teste funcional que valida a função anterior.
+---
 
-![menu](image-7.png)
+# 🧾 Campos da Suíte de Testes
 
-### Suite - Adicionar Itens
+## ID
 
-Na aba Suite adicionar_itens tem como objetivo validar a funcionalidade de adicionar itens ao carrinho, como o critério de aceite. Contém o caso de teste funcional que valida a função anterior.
+Cada ID representa um **Caso de Teste (CT)**, identificando de forma única cada cenário de validação.
 
-![adicionar itens](image-8.png)
+---
 
-### Suite - Remover Itens 
+## Critérios de Aceite
 
-Na aba Suite remover_itens tem como objetivo validar a funcionalidade de remover itens do carrinho, como o critério de aceite. Contém o caso de teste funcional que valida a função anterior.
+Os critérios de aceite são descritos utilizando **linguagem Gherkin**, permitindo descrever de forma clara o comportamento esperado do sistema.
 
-![remover](image-9.png)
+---
 
-### Suite - Filtrar Itens
+## Prioridade
 
-Na aba Suite remover_itens tem como objetivo validar a funcionalidade de remover itens do carrinho, como o critério de aceite. Contém o caso de teste funcional que valida a função anterior.
+A prioridade define **a ordem de correção de um defeito**, considerando impacto no negócio e urgência da resolução.
 
-![filtro](image-10.png)
+---
 
+## Severidade
 
+A severidade representa **o impacto do defeito no funcionamento do sistema**, avaliando o nível de comprometimento da funcionalidade.
 
+---
+
+## Resultado Esperado
+
+Descrição do comportamento esperado do sistema ao executar o caso de teste.
+
+---
+
+## Resultado Obtido
+
+Indica o resultado real da execução do teste:
+
+- **OK** - teste executado com sucesso
+- **NOK** - falha identificada durante a execução
+
+---
+
+## Registro de Defeito
+
+Quando um defeito é identificado, ele é registrado em uma planilha de **Controle de Bugs**, contendo:
+
+- ID do bug
+- Descrição
+- Evidência
+- Story relacionada
+
+Cada bug recebe um **ID sequencial**, iniciando em `BUG-001`.
+
+---
+
+## Indicador de Status
+
+Campo visual utilizado para indicar o status do teste executado.
+
+Exemplo:
+
+- 🟢 Passou
+- 🔴 Falhou
+
+---
+
+# 📚 Suítes de Teste
+
+As suítes de teste foram organizadas por funcionalidade da aplicação.
+
+---
+
+# 🔐 Suite - Login
+
+A aba **suite_login** tem como objetivo validar a funcionalidade de **login na aplicação**.
+
+Os testes verificam:
+
+- autenticação com credenciais válidas
+- comportamento com credenciais inválidas
+- acesso ao sistema após login
+
+![Suite Login](image-6.png)
+
+---
+
+# 📂 Suite - Menu
+
+A aba **suite_validar_menu** valida a funcionalidade do **menu da aplicação**, garantindo que os elementos estejam acessíveis e funcionando corretamente.
+
+![Suite Menu](image-7.png)
+
+---
+
+# ➕ Suite- Adicionar Itens
+
+A aba **suite_adicionar_itens** valida a funcionalidade de **adicionar produtos ao carrinho**.
+
+Os testes verificam:
+
+- adição correta de itens
+- atualização do carrinho
+- comportamento da interface após a ação
+
+![Adicionar Itens](image-8.png)
+
+---
+
+# ➖ Suite - Remover Itens
+
+A aba **suite_remover_itens** valida a funcionalidade de **remoção de produtos do carrinho**.
+
+![Remover Itens](image-9.png)
+
+---
+
+# 🔎 Suite - Filtrar Itens
+
+A aba **suite_filtrar_itens** valida a funcionalidade de **filtro de produtos**, garantindo que os resultados apresentados estejam de acordo com os critérios selecionados.
+
+![Filtrar Itens](image-10.png)
+
+---
+
+# 🎯 Objetivo da Suíte de Testes
+
+A suíte de testes foi criada para garantir:
+
+- validação das principais funcionalidades da aplicação
+- rastreabilidade entre casos de teste e defeitos
+- organização da execução dos testes
+- registro estruturado de evidências
+
+---
+
+💡 Este plano de teste foi desenvolvido com fins educacionais para prática de **planejamento e execução de testes de software**.
